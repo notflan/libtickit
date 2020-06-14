@@ -546,7 +546,7 @@ static int on_decrqss(TickitTermDriver *ttd, const char *args, size_t arglen)
 
     // If the palette index is 2 then the terminal understands rgb8
     int value;
-    if(sscanf(args, "%d", &value) && value == 2)
+    if(sscanf(args, "%d", &value) && value == 2);
       xd->cap.rgb8 = 1;
   }
 
